@@ -186,9 +186,11 @@ plot1 <- ggplot(data=plotdata1, aes(x=Var2, y=Freq))
 
 plot1 <- plot1 + geom_bar(stat="identity") + facet_wrap( ~ Var1) 
 
-plot1 + theme_bw() + labs(title = "The effects of age and gender on social media use",
+plot1 <- plot1 + theme_bw() + labs(title = "The effects of age and gender on social media use",
                           x = "Age",
                           y = "Proportion")
+
+plot(plot1)
 ```
 
 ![](testAssignment_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
